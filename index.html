@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="faixa-etria">
+                <span> <b>Selecione:</b> </span>
+                <ul class="select">
+                    <li>
+                        <input type="radio" class="adulto" name="idade" value="adult">
+                        <label>Adulto</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" class="criança" name="idade" value="kids">
+                        <label>Criança</label>
+                    </li>
+                </ul>
+                <p class="input-idade"><b>Acima de 19 anos</b></p>
+
+            </div>
+
+            <div class="sexo">
+                <span> <b>Sexo:</b> </span>
+                <ul class="tipo">
+                    <li>
+                        <input type="radio" name="sexo">
+                        <label>Homem</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="sexo">
+                        <label>Mulher</label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <h2>IMC para Adulto</h2>
+        <div>
+            <span class="label_active">Peso (kg)</span>
+            <input type="text" class="peso" placeholder="Peso (kg)">
+        </div>
+        <div>
+            <span class="label_active">Altura (m)</span>
+            <input type="text" class="altura" placeholder="Altura (m)">
+        </div>
+        <button>Calcular</button>
+
+    </main>
+
+    <aside>
+        <span class="imc-result">Seu IMC é:</span>
+        <div class="resultado"></div>
+        <div class="texto-imc">
+            <p> Como chegamos ao número à esquerda: o índice de massa corporal de um adulto é o seu peso em quilos (por
+                exemplo, 80 kg), dividido por sua altura ao quadrado (vamos imaginar, 1,80 m x 1,80 m). </p>
+        </div>
+    </aside>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Definição</th>
+            </tr>
+
+            <tr>
+                <td>≤ 18.5</td>
+                <td>Abaixo do normal</td>
+                <td>Seu peso está abaixo do recomendado para sua altura. Isso pode indicar desnutrição ou outros problemas de saúde. É importante buscar orientação médica e nutricional.</td>
+            </tr>
+
+            <tr>
+                <td>18.6 a 24.9</td>
+                <td>Normal</td>
+                <td>Você está dentro da faixa de peso considerada ideal para sua altura. Continue mantendo hábitos saudáveis, como boa alimentação e prática regular de exercícios.</td>
+            </tr>
+
+            <tr>
+                <td>25 e 29.9</td>
+                <td>Sobrepeso</td>
+                <td>Você está acima do peso ideal. Embora ainda não seja obesidade, esse quadro já pode aumentar o risco de doenças cardíacas, diabetes e outras condições. Avalie com um profissional de saúde.</td>
+            </tr>
+
+            <tr>
+                <td>30 e 34.9</td>
+                <td>Obesidade grau I</td>
+                <td>Este é o primeiro nível de obesidade. Pode trazer riscos significativos à saúde se não for tratado com acompanhamento médico, nutricional e mudanças no estilo de vida.</td>
+            </tr>
+
+            <tr>
+                <td>35 e 39.9</td>
+                <td>Obesidade grau II</td>
+                <td>Esse nível de obesidade é considerado severo. Pode aumentar bastante o risco de problemas cardiovasculares, diabetes tipo 2 e outras complicações. Busque apoio médico com urgência.</td>
+            </tr>
+
+            <tr>
+                <td>> 40</td>
+                <td>Obesidade grau III</td>
+                <td>Também chamada de obesidade mórbida, representa um risco muito alto à saúde. O acompanhamento com médicos, nutricionistas e psicólogos é essencial para reverter esse quadro.</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+<script src="./javascript.js"></script>
+
+</html>
