@@ -35,12 +35,13 @@ main {
     background-color: #fff;
     width: 100%;
     border: 8px solid #2C3E99;
+    border-radius: 10px;
 }
 
 section {
     display: flex;
-    gap: 30px 
-    justify-content space-between;
+    gap: 30px; 
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -116,10 +117,85 @@ aside {
     border-collapse: collapse;
     background-color: #fff;
     margin-top: 45px;
+    border-radius: 10px;
 }
 
 .table th, .table td {
     border: 2px solid #2C3E99;
     padding: 10px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+        border-width: 4px;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .faixa-etria, .sexo {
+        width: 50%;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        width: 25%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .table {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-width: 4px;
+    }
+
+    .imc-result {
+        font-size: 24px;
+    }
+
+    .resultado {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .texto-imc {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

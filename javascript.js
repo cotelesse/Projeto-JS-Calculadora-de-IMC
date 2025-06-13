@@ -6,6 +6,7 @@ const adult = document.querySelector(".adulto")
 const kids = document.querySelector(".criança")
 const newInput = document.querySelector(".input-idade")
 const tableAge = document.querySelector(".table")
+const titleIMC = document.querySelector(".title-imc")
 
 function clickButton() {
     const pesoDigitado = document.querySelector(".peso").value
@@ -47,6 +48,7 @@ function clickButton() {
 
 adult.addEventListener("change",() => {
     newInput.innerHTML = `<p><b>Acima de 19 anos</b></p>`
+    titleIMC.innerHTML = `IMC para Adulto`
     tableAge.innerHTML = `<table>
     <tr>
         <th>IMC</th>
@@ -95,6 +97,7 @@ adult.addEventListener("change",() => {
 kids.addEventListener("change", () => {
     newInput.innerHTML = `<label><b>Informe a idade da criança:</b></label>
     <input type="number" class="idade-crianca" min="1" max="19" placeholder="Ex: 7 anos">`
+    titleIMC.innerHTML = `IMC para Criança`
     tableAge.innerHTML = `<table>
     <tr>
         <th>IMC</th>
